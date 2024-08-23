@@ -1,0 +1,19 @@
+@use "../../scss/" as *;
+
+.movie-card {
+  position: relative;
+  width: 100%;
+  z-index: 90;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.movie-image > img {
+  width: 100%;
+  min-width: 240px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
